@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colorPreview{
+            width: 300px;
+            height: 200px;
+            border:2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #colorHistory{
+            list-style: none;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Interactive Color Picker</h1>
+    <lable >Choose a color:</lable>
+    <input type="color" id="colorPicker">
+    <div id="colorPreview">
+        Color Preview
+    </div>
+    
+    <h2>Color History</h2>
+      <button id="clearHistoryButton">Clear History</button>
+    <ul id="colorHistory"></ul>
+  
+
+    <p id="history"></p>
+    <script src="test.js"></script>
+</body>
+</html>

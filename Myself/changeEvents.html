@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+       padding: 10px 0px;
+       
+        
+    }
+    #Dark{
+        width: 200px;
+        height: 50px;
+         border-radius: 10px;
+          font-size: 1.3rem;
+         
+
+    }
+    #Dark:hover{
+        background-color: darkslategrey;
+        color: white;
+    }
+     #Light{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 1.3rem;
+    }
+
+     #Light:hover{
+        background-color: white;
+        color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        
+<button id="Dark">Dark</button>
+<button id="Light">Light</button>
+</div>
+
+<h1>My Self</h1>
+
+    <!-- We use example about options -->
+     <label for="color">Choose Color: </label>
+     <select name="color" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+     </select>
+     <p id="selectedColor">Selected Color : None</p>
+
+     <!-- I type a name then i produce in pragraph -->
+      <label for="username"> Username</label>
+      <input type="text" id="username">
+      <p id="currentUser">Current Username:........</p>
+
+    <script src="changeEvents.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        .container{
+            display:  flex;
+            flex-direction: column;
+            justify-content: center;
+           
+            align-items: center;
+        }
+        #colorPosition{
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        #btnClear{
+            width: 70px;
+            height: 30px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        #colorList{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Color Picker</h1>
+    <label>Choose Color</label>
+    <input type="color" id="colorPicker">
+    <div id="colorPosition">Color Preview </div>
+    <h2>Color History</h2>
+    <ul id="colorList"></ul>
+    <button id="btnClear">Clear</button>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
